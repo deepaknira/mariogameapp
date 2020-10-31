@@ -4,3 +4,5 @@ Background music currently does not work in any browser besides Firefox 4. I thi
 Ported from the Java version by Notch (Markus Persson).
 
 --- Demo for Ansible Playbook created by Prasanjit Singh ---
+Execute with:
+`ansible-playbook -i inventory mario.yml`
