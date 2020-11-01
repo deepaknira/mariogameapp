@@ -23,7 +23,7 @@
     - name: Build Docker image from Dockerfile
       docker_image:
         name: mario
-        state: build
+        state: present
         
     - name: Running the container
       docker_container:
