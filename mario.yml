@@ -25,16 +25,13 @@
         path: .
         name: mario
         tag: latest
-      args:
-         warn: false
         
-    - name: Running the container
+    - name: Create a docker container
       docker_container:
+        name: mario
         image: mario:latest
-        publish_all_ports: yes
-        state: running
-      args:
-        warn: false
+        ports:
+          - "8080:8080"
         
     - name: Check if container is running
       shell: docker ps
