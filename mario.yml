@@ -20,10 +20,11 @@
         name: docker.io
         state: present
         
-    - name: Build Docker image from Dockerfile
+    - name: Build Mario image
       docker_image:
+        path: .
         name: mario
-        state: present
+        tag: latest
         
     - name: Running the container
       docker_container:
