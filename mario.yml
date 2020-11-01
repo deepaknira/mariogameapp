@@ -1,3 +1,4 @@
+
 ---
   - name: Install Docker on Ubuntu
     hosts: test
@@ -11,15 +12,15 @@
         name: docker.io
         state: present
         
-     - name: Build Docker image from Dockerfile
-       docker_image:
-         name: mario
-         state: build
+    - name: Build Docker image from Dockerfile
+      docker_image:
+        name: mario
+        state: build
         
-     - name: Running the container
-       docker_container:
-         image: mario:latest
-         state: running
+    - name: Running the container
+      docker_container:
+        image: mario:latest
+        state: running
             
-     - name: Check if container is running
-       shell: docker ps
+    - name: Check if container is running
+      shell: docker ps
