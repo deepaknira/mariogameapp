@@ -6,3 +6,7 @@ Ported from the Java version by Notch (Markus Persson).
 --- Demo for Ansible Playbook created by Prasanjit Singh ---
 Execute with:
 `ansible-playbook -i inventory mario.yml`
+
+___
+:ledger: Maintainer: **[Prasanjit Singh](https://www.linkedin.com/in/prasanjit-singh)** | **www.binpipe.org**   [![BINPIPE](https://img.shields.io/badge/YouTube-red.svg)](https://www.youtube.com/channel/UCPTgt4Wo0MAnuzNEEZlk90A)
+___ 
